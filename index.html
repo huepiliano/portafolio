@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo Cabrera Sandoval | Portafolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .contact-info a,
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: inherit;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info i {
+            width: 18px;
+            text-align: center;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .contact-info .fa-linkedin {
+            color: #0A66C2;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,10 +61,19 @@
             <h2>Sobre Mí</h2>
             <div class="about-content">
                 <img src="img/profile.png" alt="Foto de perfil de Pablo Cabrera Sandoval" class="profile-pic">
-                <p>
-                    Hola, soy <strong>Pablo Cabrera Sandoval</strong>, desarrollador frontend junior apasionado por la creación de interfaces web modernas, funcionales y responsivas.
-                    Me gusta aprender nuevas tecnologías, enfrentar desafíos técnicos y construir soluciones digitales que mejoren la experiencia de los usuarios.
-                </p>
+                <div>
+                    <p>
+                        Hola, soy <strong>Pablo Cabrera Sandoval</strong>, traductor titulado con más de 10 años de experiencia en áreas comerciales, atención al cliente y gestión operativa en distintos sectores.
+                    </p>
+
+                    <p>
+                        Durante mi trayectoria he trabajado con herramientas empresariales como SAP, desarrollando habilidades en comunicación, análisis de datos, coordinación de equipos y orientación al usuario.
+                    </p>
+
+                    <p>
+                        Actualmente me encuentro en transición hacia el <strong>Desarrollo Web Frontend</strong>, fortaleciendo mis conocimientos en HTML, CSS, JavaScript, Vue.js y consumo de APIs REST, con el objetivo de aportar una visión técnica y orientada a la experiencia del usuario en proyectos digitales.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -111,13 +154,20 @@
                 <button type="submit" class="btn">Enviar</button>
             </form>
 
-            <p><strong>Email:</strong> trad_pcs@outlook.com</p>
-            <p><strong>Teléfono:</strong> +56 9 4675 7281</p>
-            <p><strong>LinkedIn:</strong>
+            <div class="contact-info">
+                <a href="mailto:trad_pcs@outlook.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    trad_pcs@outlook.com
+                </a>
+                <span>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    +56 9 4675 7281
+                </span>
                 <a href="https://www.linkedin.com/in/pablo-c-71109335/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
                     linkedin.com/in/pablo-c-71109335
                 </a>
-            </p>
+            </div>
         </section>
     </main>
 
